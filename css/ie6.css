@@ -1,25 +1,14 @@
-h1#logo a
-{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/logo.png', sizingMethod='image'); }
+.fixed-column {
+	position:absolute; /* position fixed for IE6 */
+	/*Expression*/
+	top:expression(55+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+'px'); 
+	left:expression(55+((e=document.documentElement.scrollLeft)?e:document.body.scrollLeft)+'px');width:220px;height:720px;
+}
+.top-bg {width:100%;height:110px;background:url('../images/top-bg.png') top center;z-index:99;position:absolute;
+top:expression(0+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+'px'); 
+left:expression(0+((e=document.documentElement.scrollLeft)?e:document.body.scrollLeft)+'px');}
 
-.projects ul li .project-bg
-{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/project.png', sizingMethod='image'); }
-
-.projects ul li .project a.plus
-{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/plus.png', sizingMethod='image'); }
-
-#contact .field 
-{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/field.png', sizingMethod='scale'); }
-
-.dir 
-{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/dir.png', sizingMethod='image'); }
-
-.buttons a em
-{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/plus.png', sizingMethod='image'); }
-
-.jcarousel-next 
-{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/next.png', sizingMethod='image'); }
-
-.jcarousel-prev 
-{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/prev.png', sizingMethod='image'); }
-
-#shell { height:1700px; }
+.home h1 {line-height:70px;}
+ul#nav {font-family:dustismo,"century gothic";}
+.bottom-bg {background:none;}
+.download {width:215px;height:206px;position:absolute;top:0px;left:0px;z-index:110;}
